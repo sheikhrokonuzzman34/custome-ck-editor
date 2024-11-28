@@ -1,0 +1,11 @@
+{% for my_model in my_models %}
+    <div>{{ my_model.content|safe }}</div>
+    <br>
+    <br>
+    <hr>
+    <hr>
+    <br>
+    <br>
+{% empty %}
+    <p>No models found.</p>
+{% endfor %}
